@@ -1,0 +1,139 @@
+body, html {
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    width: 100vw;
+    height: 92vh;
+    min-width: 100vw;
+    min-height: 92vh;
+    max-width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0px 0px;
+}
+
+.nopadding {
+    padding: 0 !important;
+    margin: 0 !important;
+ }
+
+.imgContainer {
+    width: 40%;
+    background-color: black;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+}
+
+.infoContainer {
+    width: 60%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.mainImg {
+    width: 50%;
+    height: 40%;
+    margin: 0px;
+    padding: 0px;
+    animation-name: rotate;
+    animation-duration: 4000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rotate {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+
+.infoTitle {
+    font-size: 7rem;
+    color: darksalmon;
+    padding: 0px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.infoText {
+    font-size: 3rem;
+    color: grey;
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.infoBtn {
+    font-size: 2rem;
+    color: grey;
+    background-color: transparent;
+    border: 1px solid grey;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 200px;
+    margin-bottom: 50px;
+}
+
+.infoBtn:hover{
+    background-color: grey;
+    color: white;
+    border: 1px solid white;
+    transition: 1s ease;
+}
+
+.subImgsContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.subImg {
+    width: 100px;
+    height: 100px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.subImg:hover {
+    cursor: pointer;
+    animation-name: rotate;
+    animation-duration: 4000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.selectPizza {
+    width: 50%;
+    font-size: 1rem;
+    text-align: center;
+    border: none;
+    border-bottom: 1px solid darksalmon;
+    margin-bottom: 40px;
+}
+
+.selectPizza:hover {
+    cursor: pointer;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    height: 8vh;
+}
+
